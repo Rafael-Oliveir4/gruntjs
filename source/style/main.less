@@ -1,0 +1,56 @@
+@corDeFundo: #878686;
+@corDeFundoForm: #ffffff;
+@corDeFundoButtonHover: #0056b3;
+@corDeFundoButton: #007bff;
+
+body {
+    background-color: @corDeFundo;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#sumForm {
+    background-color: @corDeFundoForm;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="number"] {
+    width: 200px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 200px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: @corDeFundoButton;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+button[type="submit"]:hover {
+    background-color: @corDeFundoButtonHover;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
